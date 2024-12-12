@@ -1,13 +1,11 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "project1/project1/utils/Formatter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator"
-], (Controller, Formatter, Filter, FilterOperator) => {
+], (Controller, Filter, FilterOperator) => {
     "use strict";
 
     return Controller.extend("project1.project1.controller.View1", {
-        formatter: Formatter,
 
         onInit() {
 // Creamos los modelos, llamamos a la vista y llamamos a los modelos correspondientes.
@@ -18,10 +16,7 @@ sap.ui.define([
 
             const oJSONModel2 = new sap.ui.model.json.JSONModel();
             oJSONModel2.loadData("./model/invoice.json");
-            oView.setModel(oJSONModel2, "invoice");
-            console.log(oJSONModel2.getData());
-            console.log(oView.setModel(oJSONModel2));
-            console.log(oJSONModel2.getProperty("./model/invoice.json/Price/0/precio"));  
+            oView.setModel(oJSONModel2, "invoice"); 
         },
 
         onFilter: function(oEvent){

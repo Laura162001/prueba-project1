@@ -1,8 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" 
     controllerName="project1.project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"
-    xmlns:formatter="project1.project1.utils.formatter">
+    xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
             <Panel id="seleccion" headerText="{i18n>selectionScreen}">
@@ -32,7 +31,7 @@
                                     formatOptions: {
                                         showMeasure: false}}"
                             numberUnit="{selection>/Currency}"
-                            numberState="{= formatter.numberState(${invoice>precio})}">
+                            numberState="{= ${invoice>precio} > 100 ? 'Success' : 'Warning'}">
                         </ObjectListItem>
             <!--El numberstate es que si el precio es mayo a 100 sale en verde si no sale en amarillo-->
                     </items>
