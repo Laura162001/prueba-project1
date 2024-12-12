@@ -1,6 +1,43 @@
-<mvc:View controllerName="project1.controller.View1"
+<mvc:View xmlns:core="sap.ui.core" 
+    controllerName="project1.project1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:formatter="project1.project1.utils.formatter">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel id="seleccion" headerText="{i18n>selectionScreen}">
+                <Label id="labelshipName" labelFor="shipName" text="{i18n>ShipName}" class="sapUiSmallMargin"></Label>
+                <Input id="shipName" value="{selection>/ShipName}" width="200px" class="sapUiSmallMarginEnd"></Input>
+                <Label id="country" text="{i18n>country}" class="sapUiSmallMargin"></Label>
+                <Select id="slCountry" selectedKey="{selection>/CountryKey}" forceSelection="false"
+                                        items="{selection>/Countries}">
+                    <items>
+                        <core:Item id="coreItem" key="{selection>key}" text="{selection>text}"></core:Item>
+                    </items>
+                </Select>
+                <Button id="btnFilter" text="{i18n>btnFilter}" icon="sap-icon://filter" 
+                        press="onFilter" class="sapUiSmallMarginEnd"></Button>
+
+                <Button id="btnClearFilter" text="{i18n>btnClearFilter}" icon="sap-icon://clear-filter"
+                        press="onClearFilter" class="sapUiSmallMarginEnd"></Button>
+            </Panel>
+            <Panel id="lista">
+                <List id="headerList" headerText="{i18n>invoice}" class="sapUiResponsiveMargin"
+                        width="auto" items="{invoice>/Price}">
+                    <items>
+                        <ObjectListItem id="object" title="{invoice>ShipName} - {invoice>CountryKey}"
+                            number="{parts: [{path: 'invoice>precio'},
+                                            {path: 'selection>/Currency'}],
+                                    type: 'sap.ui.model.type.Currency',
+                                    formatOptions: {
+                                        showMeasure: false}}"
+                            numberUnit="{selection>/Currency}"
+                            numberState="{= formatter.numberState(${invoice>precio})}">
+                        </ObjectListItem>
+            <!--El numberstate es que si el precio es mayo a 100 sale en verde si no sale en amarillo-->
+                    </items>
+                </List>
+            </Panel>
+        </content>
     </Page>
 </mvc:View>

@@ -1,0 +1,29 @@
+{
+    "Price": [
+        {
+            "ShipName": "Teclado",
+            "CountryKey": "España",
+            "precio": 100
+        },
+        {
+            "ShipName": "Pantalla",
+            "CountryKey": "UK",
+            "precio": 500
+        },
+        {
+            "ShipName": "Raton",
+            "CountryKey": "España",
+            "precio": 50.80
+        },
+        {
+            "ShipName": "Mando",
+            "CountryKey": "Italia",
+            "precio": 200
+        },
+        {
+            "ShipName": "Movil",
+            "CountryKey": "Alemania",
+            "precio": 1000
+        }
+    ]
+}

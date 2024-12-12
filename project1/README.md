@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Mon Dec 09 2024 15:06:37 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Wed Dec 11 2024 16:59:41 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.15.7|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -10,7 +10,7 @@
 |**Service URL**<br>N/A|
 |**Module Name**<br>project1|
 |**Application Title**<br>App Title|
-|**Namespace**<br>|
+|**Namespace**<br>project1|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.131.1|
 |**Enable Code Assist Libraries**<br>False|

@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: project1
+  name: project1.project1
 type: application
 server:
   customMiddleware:
@@ -24,5 +24,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: project1
+        component: project1.project1
         ui5Theme: sap_horizon
