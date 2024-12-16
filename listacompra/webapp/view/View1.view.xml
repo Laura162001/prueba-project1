@@ -1,0 +1,24 @@
+<mvc:View controllerName="listacompra.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel id="seleccion" headerText="{i18n>cabecera}" >
+                <Label id="nombre" labelFor="producto" text="{i18n>nombre}" class="sapUiSmallMargin"></Label>
+                <Input id="item" width="150px" class="sapUiSmallMarginEnd"></Input>
+                <Label id="cantidad" labelFor="itemCantidad" text="{i18n>cantidad}" class="sapUiSmallMargin"></Label>
+                <Input id="itemCantidad" width="50px" class="sapUiSmallMarginEnd"></Input>
+                <Button id="btnagregar" press="onInsertar" text="{i18n>boton}" width="100px" class="sapUiSmallMarginEnd"></Button>
+            </Panel>
+            <Panel id="lista"></Panel>
+                <List id="listado" class="sapUiResponsiveMargin" 
+                       width="auto" items="{producto>/Producto}">
+                        <items>
+                            <StandardListItem id="objeto" title="{producto>nombre}"
+                                                        info="{producto>cantidad}">
+                            </StandardListItem>
+                        </items>
+                </List>
+        </content>
+    </Page>
+</mvc:View>

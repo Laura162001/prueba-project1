@@ -1,0 +1,16 @@
+{
+    "Producto": [
+        {
+            "nombre": "Leche",
+            "cantidad": 2
+        },
+        {
+            "nombre": "Yogures",
+            "cantidad": 6
+        },
+        {
+            "nombre": "Carne",
+            "cantidad": 1
+        }
+    ]
+}
