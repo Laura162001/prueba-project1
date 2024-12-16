@@ -1,0 +1,20 @@
+{
+    "Tareas":[
+        {
+            "nombre": "Mirar Correos",
+            "status": "Completada"
+        },
+        {
+            "nombre": "Preparar Presentacion",
+            "status": "Pendiente"
+        },
+        {
+            "nombre": "Reunion con el equipo",
+            "status": "Completada"
+        },
+        {
+            "nombre": "Redactar Informe",
+            "status": "Pendiente"
+        }
+    ]
+}

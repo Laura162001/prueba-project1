@@ -1,0 +1,25 @@
+<mvc:View controllerName="listatareas.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <Panel id="datos">
+            <Label id="tarea" labelFor="inputTarea" text="{i18n>input}" class="sapUiSmallMargin"></Label>
+            <Input id="inputTarea" width="200px" class="sapUiSmallMargin"></Input>
+            <Button id="btnAgregar" press="onInsertar" text="{i18n>boton}" width="100px" class="sapUiSmallMargin"></Button>
+        </Panel>
+        <Panel id="lista">
+            <List id="listaTareas" headerText="{i18n>tareas}" class="sapUiResponsiveMarginEnd"
+              items="{tareas>/Tareas}">
+                <items>
+                    <StandardListItem id="objeto"
+                        title="{tareas>nombre}"
+                        description="{tareas>status}"
+                        type="Active"
+                        press="onCambiar"/>
+                </items>
+        </List>
+        </Panel>
+    </content>
+    </Page>
+</mvc:View>

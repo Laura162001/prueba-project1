@@ -10,7 +10,7 @@
                 <Input id="itemCantidad" width="50px" class="sapUiSmallMarginEnd"></Input>
                 <Button id="btnagregar" press="onInsertar" text="{i18n>boton}" width="100px" class="sapUiSmallMarginEnd"></Button>
             </Panel>
-            <Panel id="lista"></Panel>
+            <Panel id="lista">
                 <List id="listado" class="sapUiResponsiveMargin" 
                        width="auto" items="{producto>/Producto}">
                         <items>
@@ -19,6 +19,7 @@
                             </StandardListItem>
                         </items>
                 </List>
+            </Panel>
         </content>
     </Page>
 </mvc:View>
