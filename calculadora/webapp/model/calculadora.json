@@ -1,0 +1,10 @@
+{
+    "Calculadora":
+        {
+            "result": "0",
+            "numero": "0",
+            "numero2": "0",
+            "operador": ""
+        }
+    
+}

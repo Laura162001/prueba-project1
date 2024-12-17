@@ -1,0 +1,34 @@
+<mvc:View controllerName="calculadora.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+          <content>
+           <Text id="display" text="{calculadora>/Calculadora/result}" width="200px" class="sapUiLargeMargin"></Text>
+           
+            <FlexBox id="box" justifyContent="SpaceAround" class="sapUiMediumMargin">
+                <Button id="bnt7" text="{i18n>siete}" press="onNumber"/>
+                <Button id="bnt8" text="{i18n>ocho}" press="onNumber"/>
+                <Button id="bnt9" text="{i18n>nueve}" press="onNumber"/>
+                <Button id="bntdiv" text="{i18n>division}" press="onOperador"/>
+            </FlexBox>
+            <FlexBox id="box2" justifyContent="SpaceAround" class="sapUiMediumMargin">
+                <Button id="bnt4" text="{i18n>cuatro}" press="onNumber"/>
+                <Button id="bnt5" text="{i18n>cinco}" press="onNumber"/>
+                <Button id="bnt6" text="{i18n>seis}" press="onNumber"/>
+                <Button id="bntmult" text="{i18n>multi}" press="onOperador"/>
+            </FlexBox>
+            <FlexBox id="box3" justifyContent="SpaceAround" class="sapUiMediumMargin">
+                <Button id="bnt1" text="{i18n>uno}" press="onNumber"/>
+                <Button id="bnt2" text="{i18n>dos}" press="onNumber"/>
+                <Button id="bnt3" text="{i18n>tres}" press="onNumber"/>
+                <Button id="bntres" text="{i18n>resta}" press="onOperador"/>
+            </FlexBox>
+            <FlexBox id="box4" justifyContent="SpaceAround" class="sapUiMediumMargin">
+                <Button id="bnt0" text="{i18n>cero}" press="onNumber"/>
+                <Button id="bntpun" text="{i18n>borrar}" press="onOperador"/>
+                <Button id="bntigu" text="{i18n>igual}" press="onOperador"/>
+                <Button id="bntsum" text="{i18n>suma}" press="onOperador"/>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
