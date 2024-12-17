@@ -1,0 +1,35 @@
+<mvc:View controllerName="infouser.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form" >
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox id="boxContainer" direction="Column" alignItems="Center" height="100%">
+
+                <FlexBox id="box" direction="Row" alignItems="Center" width="200px">
+                    <Label id="nombre" labelFor="name" text="{i18n>nombre}" width="80px"></Label>
+                    <Input id="name" value="{usuario>/usuario/0/nombre}" width="200px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box2" direction="Row" alignItems="Center" width="200px">
+                    <Label id="apellido" labelFor="name" text="{i18n>apellido}" width="80px"></Label>
+                    <Input id="apell" value="{usuario>/usuario/0/apellido}" width="200px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box3" direction="Row" alignItems="Center" width="200px">
+                    <Label id="email" labelFor="name" text="{i18n>email}" width="80px"></Label>
+                    <Input id="correo" value="{usuario>/usuario/0/email}" width="200px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box4" direction="Row" alignItems="Center" width="200px">
+                    <Label id="telefono" labelFor="name" text="{i18n>telefono}" width="80px"></Label>
+                    <Input id="telf" value="{usuario>/usuario/0/telefono}" width="200px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box5" direction="Row" alignItems="Center" width="200px">
+                    <Button id="btnenviar" press="onGuardar" text="{i18n>boton}" width="200px"></Button>
+                </FlexBox>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

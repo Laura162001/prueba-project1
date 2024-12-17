@@ -1,0 +1,10 @@
+{
+    "usuario":[
+        {
+            "nombre": "Pablo",
+            "apellido": "Fernandez Garcia",
+            "email": "pablo@gmail.com",
+            "telefono": "687241533"
+        }
+    ]
+}
