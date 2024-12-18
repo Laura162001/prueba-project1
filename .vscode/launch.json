@@ -52,10 +52,60 @@
       }
     },
     {
-        "name": "listatareas-config1",
+      "name": "listatareas-config1",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/listatareas",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "index.html"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/listatareas\"}",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    },
+    {
+      "name": "calculadora-config1",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/calculadora",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "index.html"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/calculadora\"}",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    },
+    {
+        "name": "infouser-config1",
         "type": "node",
         "request": "launch",
-        "cwd": "${workspaceFolder}/listatareas",
+        "cwd": "${workspaceFolder}/infouser",
         "runtimeExecutable": "npx",
         "windows": {
             "runtimeExecutable": "npx.cmd"
@@ -72,7 +122,7 @@
         "internalConsoleOptions": "openOnSessionStart",
         "outputCapture": "std",
         "env": {
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/listatareas\"}",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/infouser\"}",
             "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
         }
     }

@@ -1,0 +1,100 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:table="sap.ui.table" controllerName="listatabla.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox id="boxContainer" direction="Column" alignItems="Center" width="100%">
+                <FlexBox id="box1" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbnombre" text="{i18n>nombre}" width="80px"></Label>
+                    <Input id="name2" width="150px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box2" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbapell1" text="{i18n>apellido1}" width="80px"></Label>
+                    <Input id="apell" width="150px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box3" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbapell2" text="{i18n>apellido2}" width="80px"></Label>
+                    <Input id="apell2" width="150px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box4" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbedad" text="{i18n>edad}" width="80px"></Label>
+                    <Input id="edad2" type="Number" width="150px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box5" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbsexo" text="{i18n>sexo}" width="80px"></Label>
+                    <RadioButtonGroup id="groupA">
+                        <RadioButton id="rb1" text="{i18n>hombre}" selected="true"></RadioButton>
+                        <RadioButton id="rb2" text="{i18n>mujer}"></RadioButton>
+                    </RadioButtonGroup>
+                </FlexBox>
+
+                <FlexBox id="box6" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbmail" text="{i18n>email}" width="80px"></Label>
+                    <Input id="mail" type="Email" width="150px"></Input>
+                </FlexBox>
+
+                <FlexBox id="box7" direction="Row" alignItems="Center" width="200px">
+                    <Button id="btnagregar" press="onAgregar" text="{i18n>btnAgregar}" width="200px"></Button>
+                </FlexBox>
+            </FlexBox>
+        </content>
+
+        <content>
+        <table:Table id="tabla" rows="{datos>/Datos}">
+            <table:columns>
+                <table:Column id="columna1">
+                    <Label id="nombre" text="{i18n>nombre}"></Label>
+
+                    <table:template>
+                        <Text id="txtnombre" text="{datos>nombre}"/>
+                    </table:template>
+                </table:Column>
+
+                <table:Column id="columna2">
+                    <Label id="apellido1" text="{i18n>apellido1}"></Label>
+
+                    <table:template>
+                        <Text id="txtapellido1" text="{datos>apellido1}"/>
+                    </table:template>
+                </table:Column>
+
+                <table:Column id="columna3">
+                    <Label id="apellido2" text="{i18n>apellido2}"></Label>
+
+                    <table:template>
+                        <Text id="txtapellido2" text="{datos>apellido2}"/>
+                    </table:template>
+                </table:Column>
+
+                <table:Column id="columna4">
+                    <Label id="edad" text="{i18n>edad}"></Label>
+
+                    <table:template>
+                        <Text id="txtedad" text="{datos>edad}"/>
+                    </table:template>
+                </table:Column>
+
+                <table:Column id="columna5">
+                    <Label id="sexo" text="{i18n>sexo}"></Label>
+
+                    <table:template>
+                        <Text id="txtsexo" text="{datos>sexo}"/>
+                    </table:template>
+                </table:Column>
+
+                <table:Column id="columna6">
+                    <Label id="email" text="{i18n>email}"></Label>
+
+                    <table:template>
+                        <Text id="txtemail" text="{datos>email}"/>
+                    </table:template>
+                </table:Column>
+            </table:columns>
+        </table:Table>
+        </content>
+    </Page>
+</mvc:View>
