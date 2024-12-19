@@ -1,0 +1,58 @@
+<mvc:View controllerName="paises.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+            <FlexBox id="boxprincipal" direction="Column" alignItems="Center" height="100%">
+                <FlexBox id="box" direction="Row" alignItems="Center" width="200px">
+                    <Input id="ciudad" placeholder="Introduce una Ciudad" width="200px"></Input>
+                    <Button id="btnbuscar" press="onBuscar" text="{i18n>btnbuscar}" icon="sap-icon://search"></Button>
+                </FlexBox>
+
+                <Table id="tabla" width="100%">
+                    <columns>
+                        <Column id="columna1">
+                        <Text id="textpais" text="{i18n>pais}"/>
+                        </Column>
+                        <Column id="columna2">
+                        <Text id="txtoficial" text="{i18n>oficial}"/>
+                        </Column>
+                        <Column id="columna3">
+                        <Text id="txtcapital" text="{i18n>capital}"/>
+                        </Column>
+                        <Column id="columna4">
+                        <Text id="txtregion" text="{i18n>region}"/>
+                        </Column>
+                        <Column id="columna5">
+                        <Text id="txtmoneda" text="{i18n>moneda}"/>
+                        </Column>
+                        <Column id="columna6">
+                        <Text id="txtsimbolo" text="{i18n>simbolo}"/>
+                        </Column>
+                        <Column id="columna7">
+                        <Text id="txtidioma" text="{i18n>idioma}"/>
+                        </Column>
+                        <Column id="columna8">
+                        <Text id="txtbandera" text="{i18n>bandera}"/>
+                        </Column>
+                    </columns>
+                    
+                    <items>
+                        <ColumnListItem id="item">
+                            <cells>
+                                <Text id="pais" text=""/>
+                                <Text id="oficial" text=""/>
+                                <Text id="capital" text=""/>
+                                <Text id="region" text=""/>
+                                <Text id="moneda" text=""/>
+                                <Text id="simbolo" text=""/>
+                                <Text id="idioma" text=""/>
+                                <Image id="bandera" src="" width="100px"/>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
