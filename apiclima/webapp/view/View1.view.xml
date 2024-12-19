@@ -1,0 +1,36 @@
+<mvc:View controllerName="apiclima.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox id="boxPrincipal" direction="Column" alignItems="Center" height="100%">
+            
+                <FlexBox id="box" direction="Row" alignItems="Center" width="200px">
+                    <Input id="ciudad" placeholder="Escribe una ciudad" width="200px"></Input>
+                    <Button id="bntBuscar" press="onBuscar" text="{i18n>btnbuscar}" icon="sap-icon://search" width="100px"></Button>
+                </FlexBox>
+
+                <FlexBox id="box2" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbciudad" labelFor="city" text="{i18n>nombre}"></Label>
+                    <Text id="city" text=""></Text>
+                </FlexBox>
+
+                <FlexBox id="box3" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbtemperatura" labelFor="temperatura" text="{i18n>temperatura}"></Label>
+                    <Text id="temperatura" text=""></Text>
+                </FlexBox>
+
+                <FlexBox id="box4" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbdescripcion" labelFor="descripcion" text="{i18n>descripcion}"></Label>
+                    <Text id="descripcion" text=""></Text>
+                </FlexBox>
+
+                <FlexBox id="box5" direction="Row" alignItems="Center" width="200px">
+                    <Label id="lbhumedad" labelFor="humedad" text="{i18n>humedad}"></Label>
+                    <Text id="humedad" text=""></Text>
+                </FlexBox>
+
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
