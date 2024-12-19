@@ -1,0 +1,34 @@
+<mvc:View controllerName="registraruser.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox id="box" direction="Column" alignItems="Center" width="100%">
+                <FlexBox id="box1" direction="Row" alignItems="Center" width="250px">
+                    <Label id="txtnombre" text="{i18n>nombre}" width="80px" class="sapUiMarginEnd"></Label>
+                    <Input id="nombre" type="Text" width="150px" class="sapUiMarginEnd"></Input>
+                </FlexBox>
+
+                <FlexBox id="box2" direction="Row" alignItems="Center" width="250px">
+                    <Label id="txtapellido" text="{i18n>apellido}" width="80px" class="sapUiMarginEnd"></Label>
+                    <Input id="apellido" type="Text" width="150px" class="sapUiMarginEnd"></Input>
+                </FlexBox>
+
+                <FlexBox id="box3" direction="Row" alignItems="Center" width="250px">
+                    <Label id="txtemail" text="{i18n>email}" width="80px" class="sapUiMarginEnd"></Label>
+                    <Input id="email" type="Email" width="150px" class="sapUiMarginEnd"></Input>
+                </FlexBox>
+
+                <FlexBox id="box4" direction="Row" alignItems="Center" width="250px">
+                    <Label id="txtcontra" text="{i18n>contra}" width="80px" class="sapUiMarginEnd"></Label>
+                    <Input id="contra" type="Password" width="150px" class="sapUiMarginEnd"></Input>
+                </FlexBox>
+
+                <FlexBox id="box5" direction="Row" alignItems="Center" width="250px">
+                    <Button id="bntResg" press="onRegistrar" text="{i18n>btnregistrar}" width="120px"></Button>
+                    <Button id="bntBorrar" press="onBorrar" text="{i18n>btnborrar}" width="120px"></Button>
+                </FlexBox>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
