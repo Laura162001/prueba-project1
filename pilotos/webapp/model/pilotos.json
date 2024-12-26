@@ -1,0 +1,214 @@
+{
+    "escuderias":[
+        {
+            "key": "Ferrari",
+            "pilotos":[
+                {
+                    "numero": 16,
+                    "bandera": "img/monaco.png",
+                    "imagen": "img/charles.png",
+                    "nombre": "Charles Leclerc",
+                    "victorias": 8,
+                    "tiempo": "6 años"
+                },
+                {
+                    "numero": 55,
+                    "bandera": "img/espania.png",
+                    "imagen": "img/sainz.png",
+                    "nombre": "Carlos Sainz",
+                    "victorias": 4,
+                    "tiempo":  "4 años"
+                }
+            ]
+        },
+        {
+            "key": "Mclaren",
+            "pilotos":[
+                {
+                    "numero": 4,
+                    "bandera": "img/uk.png",
+                    "imagen": "img/lando.png",
+                    "nombre": "Lando Norris",
+                    "victorias": 4,
+                    "tiempo": "6 años"
+                },
+                {
+                    "numero": 81,
+                    "bandera": "img/australia.png",
+                    "imagen": "img/oscar.png",
+                    "nombre": "Oscar Piastri",
+                    "victorias": 2,
+                    "tiempo": "2 años"
+                }
+            ]
+        },
+        {
+            "key": "Red Bull",
+            "pilotos":[
+                {
+                    "numero": 1,
+                    "bandera": "img/holanda.png",
+                    "imagen": "img/max.png",
+                    "nombre": "Max Verstapen",
+                    "victorias": 63,
+                    "tiempo": "9 años"
+                },
+                {
+                    "numero": 11,
+                    "bandera": "img/mexico.png",
+                    "imagen": "img/checo.png",
+                    "nombre": "Checo Perez",
+                    "victorias": 6,
+                    "tiempo": "4 años"
+                }
+            ]
+        },
+        {
+            "key": "Mercedes",
+            "pilotos":[
+                { 
+                    "numero": 44,
+                    "bandera": "img/uk.png",
+                    "imagen": "img/lewis.png",
+                    "nombre": "Lewis Hamilton",
+                    "victorias": 105,
+                    "tiempo": "12 años"
+                },
+                {
+                    "numero": 63,
+                    "bandera": "img/uk.png",
+                    "imagen": "img/russel.png",
+                    "nombre": "George Russel",
+                    "victorias": 3,
+                    "tiempo": "3 años"
+                }
+            ]
+        },
+        {
+            "key": "Aston Martin",
+            "pilotos":[
+                {
+                    "numero": 14,
+                    "bandera": "img/espania.png",
+                    "imagen": "img/alonso.png",
+                    "nombre": "Fernando Alonso",
+                    "victorias": 32,
+                    "tiempo": "2 años"
+                },
+                {
+                    "numero": 18,
+                    "bandera": "img/canada.png",
+                    "imagen": "img/lance.png",
+                    "nombre": "Lance Stroll",
+                    "victorias": 0,
+                    "tiempo": "6 años"
+                }
+            ]
+        },
+        {
+            "key": "Alpine",
+            "pilotos":[
+                {
+                    "numero": 31,
+                    "bandera": "img/francia.png",
+                    "imagen": "img/ocon.png",
+                    "nombre": "Esteban Ocon",
+                    "victorias": 1,
+                    "tiempo": "5 años"
+                },
+                {
+                    "numero": 10,
+                    "bandera": "img/francia.png",
+                    "imagen": "img/gasly.png",
+                    "nombre": "Pierre Gasly",
+                    "victorias": 1,
+                    "tiempo": "2 años"
+                }
+            ]
+        },
+        {
+            "key": "Haas",
+            "pilotos":[
+                {
+                    "numero": 20,
+                    "bandera": "img/dinamarca.png",
+                    "imagen": "img/kevin.png",
+                    "nombre": "Kevin Magnusen",
+                    "victorias": 0,
+                    "tiempo": "3 años"
+                },
+                {
+                    "numero": 27,
+                    "bandera": "img/alemania.png",
+                    "imagen": "img/nico.png",
+                    "nombre": "Nico Hulkenberg",
+                    "victorias": 0,
+                    "tiempo": "2 años"
+                }
+            ]
+        },
+        {
+            "key": "RB Visa",
+            "pilotos":[
+                {
+                    "numero": 22,
+                    "bandera": "img/japon.png",
+                    "imagen": "img/yuki.png",
+                    "nombre": "Yuki Tsunoda",
+                    "victorias": 0,
+                    "tiempo": "4 años"
+                },
+                {
+                    "numero": 3,
+                    "bandera": "img/australia.png",
+                    "imagen": "img/daniel.png",
+                    "nombre": "Daniel Ricciardo",
+                    "victorias": 8,
+                    "tiempo": "2 años"
+                }
+            ]
+        },
+        {
+            "key": "Williams",
+            "pilotos":[
+                {
+                    "numero": 23,
+                    "bandera": "img/tailandia.png",
+                    "imagen": "img/albon.png",
+                    "nombre": "Alexander Albon",
+                    "victorias": 0,
+                    "tiempo": "3 años"
+                },
+                {
+                    "numero": 2,
+                    "bandera": "img/eeuu.png",
+                    "imagen": "img/logan.png",
+                    "nombre": "Logan Sargeant",
+                    "victorias": 0,
+                    "tiempo": "2 años"
+                }
+            ]
+        },
+        {
+            "key": "Kik Sauber",
+            "pilotos":[
+                {
+                    "numero": 77,
+                    "bandera": "img/finlandia.png",
+                    "imagen": "img/bottas.png",
+                    "nombre": "Valtteri Bottas",
+                    "victorias": 10,
+                    "tiempo": "3 años"
+                },
+                {
+                    "numero": 24,
+                    "bandera": "img/china.png",
+                    "imagen": "img/zhou.png",
+                    "nombre": "Guanyu Zhou",
+                    "victorias": 0,
+                    "tiempo": "3 años"
+                }
+            ]
+        }
+    ]
+}

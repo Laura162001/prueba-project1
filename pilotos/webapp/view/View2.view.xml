@@ -1,0 +1,41 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="pilotos.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title2}">
+        <content>
+           
+            <Table id="tabla2" width="100%" items="{pilotos>/}">
+                <columns>
+                    <Column id="columna">
+                         <Image id="imagen" width="200px"></Image>
+                    </Column>
+                    <Column id="columna3">
+                        <Title id="txt" level="H1"></Title>
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem id="listado">
+                        <cells>
+                        <FlexBox id="boxcontainer" direction="Row">
+                            <FlexBox id="box" direction="Column" alignItems="Center">
+                                <FlexBox id="box2" direction="Row" width="100px">
+                                    <Title id="txtnumero" text="{pilotos>numero}" level="H5" width="50px"></Title>
+                                    <Image id="bandera" src="{pilotos>bandera}" width="50px"/>
+                                </FlexBox>
+                                <Title id="txtnombre" text="{pilotos>nombre}" level="H3"/>
+                                <Image id="imagen1" src="{pilotos>imagen}" width="100px" />
+                                <FlexBox id="box3" direction="Column">
+                                    <Text id="txtvictorias" text="Victorias: {pilotos>victorias}" />
+                                    <Text id="txttiempo" text="Años en la escuderia: {pilotos>tiempo}" />
+                                </FlexBox>
+                            </FlexBox>
+                        </FlexBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+             </Table>   
+        
+        </content>
+    </Page>
+</mvc:View>

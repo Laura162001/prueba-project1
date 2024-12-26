@@ -1,0 +1,44 @@
+{
+    "escuderias":[
+        {
+            "imagen": "img/ferrari.png",
+            "nombre": "Ferrari"
+        },
+        {
+            "imagen": "img/mclaren.png",
+            "nombre": "Mclaren"
+        },
+        {
+            "imagen": "img/redbull.png",
+            "nombre": "Red Bull"
+        },
+        {
+            "imagen": "img/mercedes.png",
+            "nombre": "Mercedes"
+        },
+        {
+            "imagen": "img/aston.png",
+            "nombre": "Aston Martin"
+        },
+        {
+            "imagen": "img/alpine.png",
+            "nombre": "Alpine"
+        },
+        {
+            "imagen": "img/hass.png",
+            "nombre": "Haas"
+        },
+        {
+            "imagen": "img/visa.png",
+            "nombre": "RB Visa"
+        },
+        {
+            "imagen": "img/williams.png",
+            "nombre": "Williams"
+        },
+        {
+            "imagen": "img/stake.png",
+            "nombre": "Kik Sauber"
+        }
+    ]
+}

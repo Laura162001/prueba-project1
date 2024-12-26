@@ -1,0 +1,28 @@
+<mvc:View controllerName="pilotos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="container" width="100%">
+                <Table id="tabla" headerText="Escuderias de Formula 1" items="{escuderia>/escuderias}">
+                    <columns>
+                        <Column id="columna1">
+                            <Image id="img1" src="{escuderia>imagen}" width="100px"></Image>
+                        </Column>
+                        <Column id="columna2">
+                            <Text id="ferrari" text="{escuderia>nombre}"></Text>
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem id="lista">
+                            <cells>
+                                <Image id="img" src="{escuderia>imagen}" width="100px"  press="onItem"/>
+                                <Text id="teto" text="{escuderia>nombre}"/>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
