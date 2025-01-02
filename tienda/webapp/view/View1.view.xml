@@ -1,0 +1,24 @@
+<mvc:View controllerName="tienda.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="tabla" items="{productsModel>/products}">
+                <columns>
+                    <Column id="columna1"/>
+                    <Column id="columna2"/>
+                    <Column id="columna3"/>
+                </columns>
+                <items>
+                    <ColumnListItem id="lista">
+                        <cells>
+                            <Image id="image" src="{productsModel>image}" width="100px" press="onNavegar"></Image>
+                            <Title id="titulo" text="{productsModel>title}" level="H3"></Title>
+                            <Text id="precio" text="{productsModel>price} €"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

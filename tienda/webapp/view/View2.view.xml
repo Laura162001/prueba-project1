@@ -1,0 +1,35 @@
+<mvc:View controllerName="tienda.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}">
+        <content>
+            <FlexBox id="box6" direction="Row" justifyContent="End">
+                <Button id="btncarrito" icon="sap-icon://cart" press="onCarrito" width="50px"/>
+            </FlexBox>
+
+            <FlexBox id="box" direction="Column" width="500px">
+                <FlexBox id="box2" direction="Row">
+
+                    <Image id="imagen" src="" width="100px"/>
+
+                    <FlexBox id="box2.1" direction="Column" justifyContent="Center" alignItems="Center">
+                        <Title id="title" text="" level="H3" width="500px"/>
+                        <Title id="categoria" text="" level="H6" width="300px"/>
+                        <Text id="precio2" text=" €" width="300px"/>
+                    </FlexBox>
+
+                </FlexBox>
+
+                <FlexBox id="box4" direction="Row" width="600px">
+                    <Text id="descripcion" text="" width="300px"/>
+                </FlexBox>
+                
+                <FlexBox id="box5" direction="Row" width="400px">
+                    <Button id="compra" text="{i18n>btncompra}" press="onComprar" width="100px"/>
+                </FlexBox>
+                
+            </FlexBox>
+
+        </content>
+    </Page>
+</mvc:View>

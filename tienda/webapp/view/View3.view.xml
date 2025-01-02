@@ -1,0 +1,29 @@
+<mvc:View controllerName="tienda.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page3" title="{i18n>title}">
+        <VBox id="vbox">
+            <VBox id="carritoLista" items="{
+                path: '/productos'
+                }">
+
+                <VBox id="vbox2" direction="Row" width="100%">
+                    <Image id="img" src="{image}" width="100px"/>
+                    <VBox id="vbox3" direction="Row" alignItems="Center" width="800px">
+                        <Title id="txt" text="{title}" width="600px"/>
+                        <Text id="txtprecio" text="{price}" width="100px"  class="precio"/>
+                     </VBox>
+                </VBox>
+            </VBox>
+
+            <VBox id="vbox4" direction="Row" justifyContent="End" width="50%">
+                <Text id="total" text="" class="total"/>
+            </VBox>
+
+            <VBox id="vbox5" direction="Row" justifyContent="Center" width="50%">
+                <Button id="btn" text="Comprar" press="onComprar"/>
+            </VBox>
+        </VBox>
+    </Page>
+</mvc:View>
