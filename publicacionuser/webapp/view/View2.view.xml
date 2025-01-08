@@ -1,0 +1,59 @@
+<mvc:View controllerName="publicacionuser.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}">
+        <content>
+            <FlexBox id="box5" direction="Column" width="auto" class="box5">
+                <Title id="nombre" text="" width="200px"/>
+                <Text id="email" text="" width="200px"/> 
+                <Text id="calle" text="" width="200px"/> 
+                <Text id="ciudad" text="" width="200px"/> 
+                <Text id="telefono" text="" width="300px"/> 
+            </FlexBox>
+            
+
+            <FlexBox id="container" direction="Row" width="100%">
+                <!--Tabla de Posts-->
+                <FlexBox id="box2" direction="Row" width="50%"> 
+                    <Table id="tabla" items="{viewModel>/posts}">
+                        <columns>
+                            <Column id="columna1" width="50%">
+                                <Text id="txtcolumn" text="Posts"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem id="items">
+                                <cells>
+                                    <VBox id="boxcelda" width="50%">
+                                        <Title id="titulo" text="{viewModel>title}" width="auto"/>
+                                        <Text id="descripcion" text="{viewModel>body}"/>
+                                    </VBox>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table> 
+                </FlexBox>
+
+                <!--Tabla de Album-->
+                <FlexBox id="box3" direction="Row" width="50%">
+                    <Table id="tabla2" items="{viewModel>/album}">
+                        <columns>
+                            <Column id="columna2" width="100%">
+                                <Text id="txtcolumn2" text="Album"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem id="items2">
+                                <cells>
+                                    <VBox id="boxcelda2" width="50%">
+                                        <Title id="titulo2" text="{viewModel>title}" width="auto"/>
+                                    </VBox>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table> 
+                </FlexBox>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

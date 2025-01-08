@@ -1,0 +1,15 @@
+<mvc:View controllerName="publicacionuser.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+        <List id="lista" items="{usuarios>/}">
+            <CustomListItem id="item">
+                <VBox id="box" class="box">
+                    <Link id="txt" text="{usuarios>name} {usuarios>username}" press="onClicar" class="txtNombre" />
+                    <Text id="txt2" text="{usuarios>email}" />
+                </VBox>
+            </CustomListItem>
+        </List>
+    </Page>
+</mvc:View>
