@@ -1,0 +1,47 @@
+
+{
+    "Informacion" : [ 
+         {
+             "nombre": "Marta",
+             "edad": "40",
+             "telefono": "678230012",
+             "ciudad": "Barcelona",
+             "comunidad": "Cataluña"
+         },
+         {
+             "nombre": "Juan",
+             "edad": "20",
+             "telefono": "609231145",
+             "ciudad": "Madrid",
+             "comunidad": "Madrid"
+         },
+         {
+             "nombre": "Pablo",
+             "edad": "33",
+             "telefono": "600123490",
+             "ciudad": "Oviedo",
+             "comunidad": "Asturias"
+         },
+         {
+             "nombre": "Laura",
+             "edad": "55",
+             "telefono": "698781233",
+             "ciudad": "Santander",
+             "comunidad": "Cantabria"
+         },
+         {
+             "nombre": "Marcos",
+             "edad": "31",
+             "telefono": "690235623",
+             "ciudad": "Valencia",
+             "comunidad": "Comunidad Valenciana"
+         },
+         {
+             "nombre": "Maria",
+             "edad": "24",
+             "telefono": "699458923",
+             "ciudad": "A coruña",
+             "comunidad": "Galicia"
+         }
+     ]
+ }

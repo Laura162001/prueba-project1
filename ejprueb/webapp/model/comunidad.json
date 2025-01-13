@@ -1,0 +1,28 @@
+{
+    "Comunidad" : [
+        {
+            "key": "Madrid",
+            "nombre": "Madrid"
+        },
+        {
+            "key": "Cataluña",
+            "nombre": "Cataluña"
+        },
+        {
+            "key": "Asturias",
+            "nombre": "Asturias"
+        },
+        {
+            "key": "Comunidad Valenciana",
+            "nombre": "Comunidad Valenciana"
+        },
+        {
+            "key": "Cantabria",
+            "nombre": "Cantabria"
+        },
+        {
+            "key": "Galicia",
+            "nombre": "Galicia"
+        }
+    ]
+}

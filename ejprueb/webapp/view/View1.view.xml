@@ -1,0 +1,55 @@
+<mvc:View controllerName="ejprueb.controller.View1"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label id="nombre" labelFor="txtNombre" text="{i18n>nombre}"></Label>
+            <Input id="txtNombre" type="Text" placeholder="Introduce el nombre" width="200px"></Input>
+
+            <Label id="telef" labelFor="txtTelf" text="{i18n>telefono}"></Label>
+            <Input id="txtTelf" type="Text" width="200px"></Input>
+
+           <ComboBox id="comboBox"
+				items="{
+					path: 'comunidad>/Comunidad'
+				}">
+				<core:Item id="item" key="{comunidad>key}" text="{comunidad>nombre}" />
+			</ComboBox>
+            
+            <Button id="boton" text="{i18n>boton}" press="onGo" width="100px"></Button>
+            <Button id="btnfiltrar" text="{i18n>btnfiltrar}" press="onFiltrar" width="100px"></Button>
+
+            <Table id="tabla" items="{datos>/Informacion}">
+                <columns>
+                    <Column id="columna">
+                        <Text id="columnatxt" text="Nombre"></Text>
+                    </Column>
+                    <Column id="columna2">
+                        <Text id="columnatxt2" text="Edad"></Text>
+                    </Column>
+                    <Column id="columna3">
+                        <Text id="columnatxt3" text="Telefono"></Text>
+                    </Column>
+                    <Column id="columna4">
+                        <Text id="columnatxt4" text="Ciudad"></Text>
+                    </Column>
+                    <Column id="columna5">
+                        <Text id="columnatxt5" text="Comunidad"></Text>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="items">
+                        <cells>
+                            <Text id="celdaNombre" text="{datos>nombre}"></Text>
+                            <Text id="celdaEdad" text="{datos>edad}"></Text>
+                            <Text id="celdaTelefono" text="{datos>telefono}"></Text>
+                            <Text id="celdaCiudad" text="{datos>ciudad}"></Text>
+                             <Text id="celdaComunidad" text="{datos>comunidad}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
